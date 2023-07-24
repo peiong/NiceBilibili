@@ -32,9 +32,13 @@
 		) {
 			return;
 		}
-		if (e && e.keyCode == 76) {
+		if (e && e.keyCode === 76) {
 			if ($(".bpx-player-ctrl-btn.bpx-player-ctrl-web").length) {
-				$(".bpx-player-ctrl-btn.bpx-player-ctrl-web:not(.bpx-state-entered)").click();
+				if ($(".bpx-player-ctrl-btn.bpx-player-ctrl-web.bpx-state-entered").length) {
+					$(".bpx-player-ctrl-btn.bpx-player-ctrl-web.bpx-state-entered").click();
+				} else {
+					$(".bpx-player-ctrl-btn.bpx-player-ctrl-web:not(.bpx-state-entered)").click();
+				}
 			}
 		}
 	};
@@ -42,25 +46,37 @@
 	//修改主页和个人空间banner
 	setTimeout(function () {
 		var v = document.querySelector("div.bili-banner");
-		var o = document.getElementsByClassName("logo-img");
-		var space = document.querySelector("div.h-inner");
-		o[0].remove();
 		v.setAttribute(
 			"style",
 			"background-image : url('https://f005.backblazeb2.com/file/img-forWeb/uPic/198baa642414cb79b6338faf2c6bfd6f1c5f5b72.png')",
 		);
+	}, 0);
+
+	setTimeout(function () {
+		var bannerImg = document.getElementById("bili-header-banner-img");
+		var sourceTag = bannerImg.getElementsByTagName("source")[0];
+		sourceTag.srcset =
+			"https://f005.backblazeb2.com/file/img-forWeb/uPic/198baa642414cb79b6338faf2c6bfd6f1c5f5b72.png";
+	}, 0);
+
+	setTimeout(function () {
+		var o = document.getElementsByClassName("logo-img");
+		o[0].remove();
+
+		var space = document.querySelector("div.h-inner");
 		space.setAttribute(
 			"style",
 			"background-image : url('//i0.hdslb.com/bfs/new_dyn/0d006018038c5b93c92d7954d2f9e5bd6823116.jpg')",
 		);
-	}, 300);
+	}, 0);
+
 	setTimeout(function () {
 		var space = document.querySelector("div.h-inner");
 		space.setAttribute(
 			"style",
 			"background-image : url('//i0.hdslb.com/bfs/new_dyn/0d006018038c5b93c92d7954d2f9e5bd6823116.jpg')",
 		);
-	}, 1000);
+	}, 0);
 
 	function isURL(url, base) {
 		try {
