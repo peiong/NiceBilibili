@@ -17,10 +17,14 @@
 (function () {
 	"use strict";
 
-	document.cookie = "go_old_video=1; domain=.bilibili.com; path=/";
-	document.cookie = "i-wanna-go-back=1; domain=.bilibili.com; path=/";
-	document.cookie = "buvid3; domain=.bilibili.com; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-	document.cookie = "buvid4; domain=.bilibili.com; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+	document.cookie = "buvid3=-1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
+	document.cookie = "buvid4=-1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
+	document.cookie = "buvid_fp=-1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
+	document.cookie = "go_old_video=1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/";
+	document.cookie =
+		"i-wanna-go-back=1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
+	document.cookie =
+		"i-wanna-go-feeds=1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
 
 	//按下“L”键播放器宽屏
 	document.onkeydown = function (event) {
