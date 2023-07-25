@@ -22,12 +22,19 @@
 	document.cookie = "buvid4=-1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
 	document.cookie = "buvid_fp=-1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
 	document.cookie = "go_old_video=1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/";
+
+	//主页
 	document.cookie =
-		"i-wanna-go-back=2; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
-	document.cookie =
-		"nostalgia_conf=2; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
+		"i-wanna-go-back=1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
 	document.cookie =
 		"i-wanna-go-feeds=-1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
+
+	//动态页
+	document.cookie = "go-back-dyn=1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
+
+	//搜索页
+	document.cookie =
+		"nostalgia_conf=2; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
 
 	//按下“L”键播放器宽屏
 	document.onkeydown = function (event) {
