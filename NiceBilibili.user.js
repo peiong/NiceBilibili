@@ -6,6 +6,7 @@
 // @homepageURL  https://github.com/peiong/NiceBilibili
 // @supportURL   https://github.com/peiong/NiceBilibili
 // @match        *://*.bilibili.com/?*
+// @match        https://www.bilibili.com
 // @match        *://*.bilibili.com/**
 // @match        *://*.bilibili.com/video/*
 // @match        *://*.bilibili.com/cheese/*
@@ -22,9 +23,11 @@
 	document.cookie = "buvid_fp=-1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
 	document.cookie = "go_old_video=1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/";
 	document.cookie =
-		"i-wanna-go-back=1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
+		"i-wanna-go-back=2; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
 	document.cookie =
-		"i-wanna-go-feeds=1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
+		"nostalgia_conf=2; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
+	document.cookie =
+		"i-wanna-go-feeds=-1; Domain=.bilibili.com; Expires=08/02/2030, 01:32:32 AM; Path=/;";
 
 	//按下“L”键播放器宽屏
 	document.onkeydown = function (event) {
