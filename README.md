@@ -13,5 +13,5 @@ Safari目前只能使用10.x以前的版本，10.0及以后的版本作者用ts�
 
 ##### 修改示例
 
-![index.png](https://f005.backblazeb2.com/file/img-forWeb/uPic/2023-11-30at4.27.46PM.png) 
+![index.png](https://f005.backblazeb2.com/file/img-forWeb/uPic/2023-11-30index.png) 
 ![player.png](https://f005.backblazeb2.com/file/img-forWeb/uPic/2023-11-30.png) 
